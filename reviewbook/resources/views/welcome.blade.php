@@ -1,12 +1,10 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8" />
-        <title>Welcome</title>
-    </head>
-    <body>
-        <h1>Selamat datang {{ $fullname }}</h1>
-        <h2>Nama depan anda: {{ $fname }}</h2>
-        <h2>Nama belakang anda: {{ $lname }}</h2>
-    </body>
-</html>
+@extends('layouts.master')
+
+@section('title')
+    <h1>DASHBOARD</h1>
+@endsection
+
+@section('content')
+    <h1>Selamat datang {{ $fullname }}</h1>
+    <p>Terima kasih telah bergabung di Sanbercode. Social media kita bersama</p>
+@endsection
